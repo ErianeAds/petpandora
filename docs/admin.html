@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Amor & Patas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2>📋 Painel do Administrador</h2>
+    <ul id="agendamentosAdmin"></ul>
+  </div>
+
+  <script>
+    async function carregarTodos() {
+      const res = await fetch("api/admin_agendamentos.php");
+      const dados = await res.json();
+      const lista = document.getElementById("agendamentosAdmin");
+      lista.innerHTML = "";
+
+      dados.forEach(a => {
+        const item = document.createElement("li");
+        item.textContent = `${a.nome} agendou ${a.servico} para ${a.pet} em ${a.data}`;
+        lista.appendChild(item);
+      });
+    }
+    carregarTodos();
+  </script>
+</body>
+</html>
