@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamentos - Amor & Patas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2>🐶 Agendamentos de Banho & Tosa</h2>
+
+    <form id="formAgendar">
+      <input type="text" id="pet" placeholder="Nome do pet" required />
+      <select id="servico" required>
+        <option value="">Selecione o serviço</option>
+        <option value="banho">Banho</option>
+        <option value="tosa">Tosa</option>
+        <option value="banho-tosa">Banho + Tosa</option>
+      </select>
+      <input type="date" id="data" required />
+      <button type="submit">Agendar</button>
+    </form>
+
+    <h3>Seus agendamentos</h3>
+    <ul id="listaAgendamentos"></ul>
+  </div>
+
+  <script src="js/agendamento.js"></script>
+</body>
+</html>
