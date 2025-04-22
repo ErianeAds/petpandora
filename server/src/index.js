@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+
 const usuariosRoutes = require('../src/routes/usuarios');
 const agendamentosRoutes = require('../src/routes/agendamentos');
 

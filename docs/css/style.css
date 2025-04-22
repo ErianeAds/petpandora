@@ -1,171 +1,264 @@
-body.login-page {
-    background: #f4f8fb;
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .login-container {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .login-container h1 {
-    color: #0077c2;
-    margin-bottom: 30px;
-  }
-  
-  input, button {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-  }
-  
-  button {
-    background-color: #0077c2;
-    color: white;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #005fa3;
-  }
-  
-  .error-msg {
-    color: red;
-    font-size: 0.9em;
-  }
-  
-  /* Reset básico */
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Londrina+Solid:wght@400;700&display=swap');
+
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fffaf7;
+  color: #333;
+}
+
+/* Login page */
+body.login-page {
+  background: #f4f8fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h1 {
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background-color: #7c444d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7c444d;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Header geral */
+header {
+  background-color: #ffe4c4;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* h2 acima de h1 */
+header h2 {
+  color: #52332a;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+header h1 {
+  color: #7c444d;
+  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  font-family: "Bowlby One", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+header h3 {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #b76e79;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4f69;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #fff0e0, #ffe5d9);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #b76e79;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #ff4f69;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d63f56;
+}
+
+/* Cards */
+.servicos {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.servicos h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b76e79;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ffd9cc;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+/* Efeito do card com cursor de estrela */
+.card:hover {
+  transform: translateY(-5px);
+  cursor: url('https://abs.twimg.com/emoji/v2/svg/2b50.svg'), auto;
+}
+
+.card h4 {
+  color: #ff4f69;
+  margin-bottom: 1rem;
+}
+
+/* Imagem cachorro */
+.cachorros {
+  max-width: 20rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background-color: #d63f56;
+  text-align: center;
+}
+
+.cachorros img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.cachorros img:hover {
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe4c4;
+  color: #b76e79;
+  margin-top: 2rem;
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  z-index: 1001;
+  color: #b76e79;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1.5rem;
+    background-color: #ffe4c4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
   }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #fffaf7;
-    color: #333;
+
+  nav.active {
+    display: flex;
   }
-  
+
+  .menu-toggle {
+    display: block;
+  }
+
   .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
-  
-  header {
-    background-color: #ffe4c4;
-    padding: 1rem 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    color: #b76e79;
-  }
-  
-  nav a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #b76e79;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #ff4f69;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 4rem 1rem;
-    background: linear-gradient(to right, #fff0e0, #ffe5d9);
-  }
-  
-  .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #b76e79;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .btn {
-    background-color: #ff4f69;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #d63f56;
-  }
-  
-  .servicos {
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-  
-  .servicos h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #b76e79;
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ffd9cc;
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 280px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h4 {
-    color: #ff4f69;
-    margin-bottom: 1rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ffe4c4;
-    color: #b76e79;
-    margin-top: 2rem;
-  }
-  
+}

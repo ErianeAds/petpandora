@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PetPandora - Banho e Tosa</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
+
 <body>
   <header>
     <div class="container">
-      <h1>🐾 PetPandora</h1>
-      <nav>
+      <h2>PetShop</h2>
+      <h1>🐾 Pandora</h1>
+     <!-- Ícone do menu hambúrguer -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+     <!-- Menu navegação -->
+      <nav id="nav">
         <a href="login.html">Login</a>
         <a href="cadastro.html">Cadastro</a>
         <a href="agendamentos.html">Agendamento</a>
       </nav>
     </div>
+    <script src="js/menu.js"></script>
+
   </header>
 
   <main>
     <section class="hero">
+      <img class="cachorros" src="/docs/image/Rectangle.JPG" />
       <h2>Banho e Tosa com Carinho e Segurança</h2>
       <p>Seu pet tratado com amor por profissionais experientes. Agende agora!</p>
       <a href="agendamentos.html" class="btn">Agendar Agora</a>
