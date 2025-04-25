@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamentos - Amor & Patas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2 style="margin-bottom: 1rem;">🐶 Agende o mimo do seu pet!</h2>
+    <p style="color: #7c444d; margin-bottom: 2rem;">Banho, tosa e carinho garantidos 💖</p>
+
+    <form id="formAgendar" style="text-align: left;">
+      <label for="pet">Nome do pet:</label>
+      <input type="text" id="pet" placeholder="Ex: Thor" required />
+      <label for="raca">Raça do pet:</label>
+      <input type="text" id="raca" placeholder="Ex: Shih-tzu" required />
+      
+      <label for="servico" class="label-servico">Serviço:</label>
+      <select id="servico" required>
+        <option value="">Selecione o serviço</option>
+        <option value="banho">🛁 Banho</option>
+        <option value="tosa">✂️ Tosa</option>
+        <option value="banho-tosa">🧼 Banho + Tosa</option>
+      </select>
+
+      <label for="data">Data do agendamento:</label>
+      <input type="date" id="data" required />
+
+      <button type="submit" class="btn">
+        <span class="material-symbols-rounded" style="vertical-align: middle;">event</span>
+        Agendar
+      </button>
+    </form>
+    <label for="foto">Foto do pet (opcional):</label>
+    <input type="file" id="foto" accept="image/*" />
+    <img id="preview" alt="Prévia da imagem" style="display: none;" />
+
+    <h3 style="margin-top: 2rem;">📋 Meus Agendamentos</h3>
+    <ul id="loadAppointments" style="text-align: left;"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

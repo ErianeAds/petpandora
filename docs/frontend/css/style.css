@@ -1,0 +1,467 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Londrina+Solid:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fffaf7;
+  color: #333;
+}
+
+/* Login page */
+body.login-page {
+  background: #f4f8fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h1 {
+  color: #b76e79;
+  margin-bottom: 30px;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background-color: #7c444d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7c444d;
+}
+/* Agendamentos */
+.appointments h2 {
+  margin-bottom: 1.5rem;
+}
+
+#newAppointmentBtn {
+  margin-bottom: 1.5rem;
+}
+
+
+.show-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 35px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Header geral */
+header {
+  background-color: #ffe4c4;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* h2 acima de h1 */
+header h2 {
+  color: #52332a;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+header h1 {
+  color: #7c444d;
+  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  font-family: "Bowlby One", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+header h3 {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #b76e79;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4f69;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #fff0e0, #ffe5d9);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #b76e79;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #ff4f69;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d63f56;
+}
+
+/* Cards */
+.servicos {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.servicos h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b76e79;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ffd9cc;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+/* Efeito do card com cursor de estrela */
+.card:hover {
+  transform: translateY(-5px);
+  cursor: url('https://abs.twimg.com/emoji/v2/svg/2b50.svg'), auto;
+}
+
+.card h4 {
+  color: #ff4f69;
+  margin-bottom: 1rem;
+}
+
+/* Imagem cachorro */
+.cachorros {
+  max-width: 20rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background-color: #d63f56;
+  text-align: center;
+}
+
+.cachorros img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.cachorros img:hover {
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffe4c4;
+  color: #b76e79;
+  margin-top: 2rem;
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  z-index: 1001;
+  color: #b76e79;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 1.5rem;
+    background-color: #ffe4c4;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .container {
+    align-items: flex-start;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Londrina+Solid:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #fffaf7;
+  color: #333;
+}
+
+body.login-page {
+  background: #fce9e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h2 {
+  font-family: 'Londrina Solid' cursive;
+  color: #b76e79;
+  font-size: 1.8rem;
+}
+
+.login-container p {
+  font-family: 'Bowlby One', cursive;
+  color: #7c444d;
+  font-size: 1.1rem;
+}
+
+/* Formulário */
+form {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #7c444d;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 5px;
+  border: 1px solid #ffdede;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #ff99a1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 153, 161, 0.4);
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4f69;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button:hover {
+  background-color: #d63f56;
+}
+
+h3 {
+  font-family: 'Londrina Solid', cursive;
+  color: #b76e79;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  border-bottom: 2px dashed #ffdede;
+  padding-bottom: 0.3rem;
+}
+
+/* Lista de agendamentos */
+#listaAgendamentos {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+#listaAgendamentos li {
+  background: #fff0f3;
+  border-left: 5px solid #ff4f69;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fffaf7;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1em;
+  color: #7c444d;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%237c444d' viewBox='0 0 24 24' width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #b76e79;
+  box-shadow: 0 0 0 2px rgba(183, 110, 121, 0.2);
+}
+
+
+
+input[type="file"]::file-selector-button {
+  background-color: #ff4f69;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #d63f56;
+}
+#preview {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .cachorros {
+    max-width: 30rem;
+    padding: 2rem;
+  }
+
+  .cachorros img {
+    border-radius: 30px;
+  }
+}
